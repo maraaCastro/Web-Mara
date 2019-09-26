@@ -1,0 +1,48 @@
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+nav ul li a{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "h h h h"
+    ". . . ."
+    ". . . ."
+}
+header {
+    background-image: url(../images/space.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    grid-area: h;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+li a {
+    text-decoration: none;
+    padding: 1rem;
+}
+main {
+    background-image: url(../images/space.jpg);
+}
+img {
+    height: 150px;
+}
+
+
