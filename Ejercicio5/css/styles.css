@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+#html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+h1, h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+}
+p {
+    font-family: 'Hammersmith One', sans-serif;
+    padding: 1rem;
+    font-size: .8rem;
+    line-height: 1.6rem;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(450px, 1fr));
+    grid-gap: 10px;
+}
+section{
+    border: solid 1px black;
+}
+#spiderman {
+    width: 250px;
+    float: left;
+    shape-outside: circle(132px at 141px 126px);
+}
+#spidermannegro {
+    height: 400px;
+    float: left;
+    shape-outside: url(.../images/amazing-spiderman-logo-3.png);
+    shape-margin: .5rem;
+}
+figure{
+    width: 100%;
+}
+#venom {
+    float: left;
+    shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+#spiderman {
+    width: 450px;
+    float: left;
+    shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
